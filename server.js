@@ -48,6 +48,6 @@ io.on('connection', function(socket){
 
 });
 
-http.listen(7000, function(){
-  console.log('listening on *:7000');
+http.listen(process.env.PORT, function(){
+  console.log('listening on *:',process.env.PORT);
 });
